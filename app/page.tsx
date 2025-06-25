@@ -3,18 +3,13 @@
 import * as React from "react";
 
 import { Hero } from "@/components/ui/animated-hero";
-import { NavBarObj } from "@/Objects/Navbar";
 import { SplashCursor } from "@/components/ui/splash-cursor";
 import { DefaultToggle } from "@/Objects/ModeToggle";
 import { Feature } from "@/components/ui/feature-with-image-carousel";
 import { Gallery4Demo } from "@/Objects/projectGallery";
-import { DemoVariant1 } from "@/Objects/hoverButton";
 import { GlowingEffectDemo } from "@/Objects/resume";
-import { BottomCard } from "@/components/ui/BottomCard";
-import { HeroScrollDemo } from "@/Objects/bottomfooter";
 import { ScrollVelocityDemo } from "@/Objects/scrollimages";
 import { Footer } from "@/components/ui/footer";
-import { BrandScroller } from "@/components/ui/brand-scoller";
 import { useState, useEffect, useRef } from "react";
 import { Home, User, Briefcase, FileText } from 'lucide-react'
 import { NavBar } from "@/components/ui/tubelight-navbar"
