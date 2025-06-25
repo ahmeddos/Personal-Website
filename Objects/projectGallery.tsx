@@ -3,52 +3,52 @@ import { Gallery4, Gallery4Props } from "@/components/blocks/gallery4"
 const demoData: Gallery4Props = {
   title: "Projects",
   description:
-    "Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
+    "Here are some of the projects I've worked on in a wide variety of domains. These projects taught me one important thing that anything can be learned and adaptibilty is the key to success in an ever-changing tech field.",
   items: [
     {
-      id: "shadcn-ui",
-      title: "shadcn/ui: Building a Modern Component Library",
+      id: "Masters",
+      title: "Master's Thesis: Explainable AI in Night-Time Object Detection",
       description:
-        "Explore how shadcn/ui revolutionized React component libraries by providing a unique approach to component distribution and customization, making it easier for developers to build beautiful, accessible applications.",
+        "Published on IEEE Xplore, This project explores the use of explainable AI techniques to enhance the interpretability of night-time object detection systems, improving safety and reliability in low-visibility conditions.",
       href: "https://ui.shadcn.com",
       image:
-        "https://images.unsplash.com/photo-1551250928-243dc937c49d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjN8fHx8fHwyfHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: "tailwind",
-      title: "Tailwind CSS: The Utility-First Revolution",
+      id: "Bachelor",
+      title: "Bachelor's Thesis: Detecting Breast Cancer using ML",
       description:
-        "Discover how Tailwind CSS transformed the way developers style their applications, offering a utility-first approach that speeds up development while maintaining complete design flexibility.",
+        "This project focuses on developing a machine learning model to assist in the early detection of breast cancer, utilizing advanced imaging techniques and data analysis.",
       href: "https://tailwindcss.com",
       image:
-        "https://images.unsplash.com/photo-1551250928-e4a05afaed1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjR8fHx8fHwyfHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: "astro",
-      title: "Astro: The All-in-One Web Framework",
+      id: "Figma",
+      title: "Elhaani: A medical appointment scheduling app frontend using Figma",
       description:
-        "Learn how Astro's innovative 'Islands Architecture' and zero-JS-by-default approach is helping developers build faster websites while maintaining rich interactivity where needed.",
-      href: "https://astro.build",
+        "Learn how Figma's collaborative design features can streamline the development of user-friendly interfaces for complex applications.",
+      href: "https://figma.com",
       image:
-        "https://images.unsplash.com/photo-1536735561749-fc87494598cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxNzd8fHx8fHwyfHwxNzIzNjM0NDc0fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: "react",
-      title: "React: Pioneering Component-Based UI",
+      id: "MERN",
+      title: "Coursesline: A Full-Stack MERN Application",
       description:
-        "See how React continues to shape modern web development with its component-based architecture, enabling developers to build complex user interfaces with reusable, maintainable code.",
+        "Mock up of a coursera like website built using the MERN stack.",
       href: "https://react.dev",
       image:
-        "https://images.unsplash.com/photo-1548324215-9133768e4094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMzF8fHx8fHwyfHwxNzIzNDM1MzA1fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: "nextjs",
-      title: "Next.js: The React Framework for Production",
+      id: "Mips",
+      title: "Mips Scheduler: A MIPS Assembly Language Scheduler",
       description:
-        "Explore how Next.js has become the go-to framework for building full-stack React applications, offering features like server components, file-based routing, and automatic optimization.",
-      href: "https://nextjs.org",
+        "Explore how MIPS assembly language can be utilized to create efficient scheduling algorithms.",
+      href: "https://mips.org",
       image:
-        "https://images.unsplash.com/photo-1550070881-a5d71eda5800?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjV8fHx8fHwyfHwxNzIzNDM1Mjk4fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ],
 };

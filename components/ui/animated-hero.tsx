@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DemoVariant1 } from "@/Objects/hoverButton";
+import { BrandScroller } from "./brand-scoller";
+
 
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["Computer Engineer", "UX Designer", "Videographer"],
+    () => ["Computer Engineer", "ML Engineer", "UX Designer", "Videographer"],
     []
   );
 
@@ -25,13 +27,13 @@ function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <div className="w-full overflow-visible">
+    <div className="w-full overflow-hidden">
       <div className="container mx-auto">
         <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
           <div className="flex gap-4 flex-col">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
               <span className="text-spektr-cyan-50">Ahmed Mitwalli</span>
-              <span className="relative flex w-full justify-center overflow-visible text-center md:pb-4 md:pt-1">
+              <span className="relative flex w-auto max-w-none justify-center overflow-hidden text-center whitespace-nowrap md:pb-4 md:pt-1">
                 &nbsp;
                 {titles.map((title, index) => (
                   <motion.span
@@ -57,17 +59,14 @@ function Hero() {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+            <p className="text-lg md:text-2xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
+              A master's student in computer engineering with a passion for machine learning and AI. 
             </p>
             <div className="">
                 <DemoVariant1 />
               </div>
           </div>
-          
+         <BrandScroller/>
       
         </div>
       </div>

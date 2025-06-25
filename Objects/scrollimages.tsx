@@ -6,43 +6,39 @@ import Image from "next/image"
 const images = [
   {
     title: "Moonbeam",
-    thumbnail: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=40&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340707-b70936a3437d?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Cursor",
-    thumbnail: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=40&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340913-45ba2d5261d0?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Rogue",
-    thumbnail: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=40&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340944-4ac71fad61f6?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Editorially",
-    thumbnail: "https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?q=80&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340727-48ce5d19cfe0?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Editrix AI",
-    thumbnail: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340888-84451a36b211?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Moonbeam 2",
-    thumbnail: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=40&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340677-f9db32306157?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Cursor 2",
-    thumbnail: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=40&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340839-5b1ff6c64bdb?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Rogue 2",
-    thumbnail: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=40&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749651340669-53865b2a5860?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Editorially 2",
-    thumbnail: "https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?q=80&w=640",
-  },
-  {
-    title: "Editrix AI 2",
-    thumbnail: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=640",
+    thumbnail: "https://images.unsplash.com/photo-1749652270081-27b83080ba2d?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ]
 
@@ -69,7 +65,7 @@ function ScrollVelocityDemo() {
             ))}
           </ScrollVelocity>
         ))}
-        <ScrollVelocity velocity={5}>You can also use a text!</ScrollVelocity>
+        <ScrollVelocity velocity={5}>SOME OF MY FAVORITE WORK</ScrollVelocity>
       </div>
     </div>
   )

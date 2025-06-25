@@ -1,5 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+
 import {
   Carousel,
   CarouselContent,
@@ -34,26 +36,29 @@ function Feature() {
             
             </h2>
             <p className="text-lg max-w-xl lg:max-w-sm leading-relaxed tracking-tight text-muted-foreground text-left">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+              -- Hey, I'm Ahmed Mitwalli, consider me a person fascinated with technology and great design. I see it as a form of interactive art with the user at the center of it all. I am currently pursuing a master's degree in computer engineering, specializing in machine learning and eXplainable AI. My goal is to create innovative solutions that enhance user experiences and push the boundaries of what's possible with technology.
+               When I am not an engineer, I am a photographer and a videographer who loves to capture the world around us as it is. 
             </p>
           </div>
         </div>
-        <div className="w-full max-w-full px-6">
+        <div className="w-full max-w-full px-8">
           <Carousel>
             <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
+              {Array.from({ length: 1 }).map((_, index) => (
                 <CarouselItem key={index}>
-                  <div className="flex rounded-md aspect-video bg-muted items-center justify-center p-6">
-                    <span className="text-sm">Platform Screenshot {index + 1}</span>
+                  <div className="flex rounded-md aspect-video bg-muted items-center justify-center p-6 opacity-90">
+                    <Image
+                  src={`/test.png`} // adjust the path & file type
+                  alt={`Screenshot ${index + 1}`}
+                  width={800}
+                  height={650}
+                  className="rounded-md object-cover w-full h-full"
+                />
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            
           </Carousel>
         </div>
       </div>

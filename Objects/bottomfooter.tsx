@@ -7,7 +7,7 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
-              If you like what you see <br />
+              Like what you see? <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                  Let's Connect
               </span>
@@ -16,13 +16,16 @@ export function HeroScrollDemo() {
         }
       >
         <div className="flex flex-col items-center justify-center w-full h-full">
-          <div className="flex flex-col items-center justify-center w-full h-full">
-            <h2 className="text-3xl font-semibold text-black dark:text-white">
-              Create stunning scroll animations with ease
+          <div className="flex flex-col items-left justify-center w-full h-full">
+              <h2 className="text3xl font-bold text-black dark:text-white">
+              Email: ahmedmit54@gmail.com <br />
+              Phone Number (Germany): +49 15225381616 <br />
+              Phone Number (Egypt): +20 1029223696 <br />
             </h2>
             <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
-              Transform your web experience with smooth and engaging scroll
-              animations.
+                Email: ahmedmit54@gmail.com <br />
+              Phone Number (Germany): +49 15225381616 <br />
+              Phone Number (Egypt): +20 1029223696 <br />
             </p>
           </div>
           </div> 

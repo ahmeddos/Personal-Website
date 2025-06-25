@@ -104,7 +104,7 @@ const Gallery4 = ({
   return (
     <section
     className={cn(
-      "w-full max-w-5xl mx-auto",
+      "w-full max-w-7xl mx-auto",
       "rounded-3xl backdrop-blur-xl bg-[rgba(43,55,80,0.2)] shadow-2xl transition-all duration-300",
       "hover:shadow-lg hover:translate-y-1", // Optional hover effects
       "p-10 lg:p-16"
@@ -165,7 +165,7 @@ const Gallery4 = ({
                 className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
               >
                 <a href={item.href} className="group rounded-xl">
-                  <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">
+                  <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9] ">
                     <img
                       src={item.image}
                       alt={item.title}

@@ -1,22 +1,19 @@
 import * as React from "react";
-import { HoverButton } from "@/components/ui/animated-hover-button"; // Adjusted to new button import
+import { HoverButton } from "@/components/ui/animated-hover-button";
 
-// Function to create the button demo
 function DemoVariant1() {
-  const handleClick = () => {
-    alert("Vibrant Red-Pink Button Clicked!");
-  };
+  const externalUrl = "https://www.linkedin.com/in/ahmed-mitwalli-652972243/"; // Replace with your actual URL
 
   return (
-    <div className="flex min-h-[200px] items-center justify-center p-4 ">
-      <HoverButton
-        onClick={handleClick}
-        className="px-12 py-5 text-xl"
-      >
-        Let's Connect!
-      </HoverButton>
+    <div className="flex min-h-[200px] items-center justify-center p-4">
+      <a href={externalUrl} target="_blank" rel="noopener noreferrer">
+        <HoverButton className="px-12 py-5 text-xl">
+          Let's Connect!
+        </HoverButton>
+      </a>
     </div>
   );
 }
 
 export { DemoVariant1 };
+

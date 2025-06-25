@@ -23,11 +23,13 @@ const iconMap: Record<string, LucideIcon> = {
 
 interface NavBarProps {
   items: NavItem[]
+  activeTab: string
+  setActiveTab: (tab: string) => void
   className?: string
 }
 
-export function NavBar({ items, className }: NavBarProps) {
-  const [activeTab, setActiveTab] = useState(items[0].name)
+export function NavBar({ items, className,activeTab,setActiveTab }: NavBarProps) {
+  
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {

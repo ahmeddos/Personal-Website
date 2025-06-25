@@ -13,10 +13,20 @@ const config: Config = {
       colors: {
         // Customize or extend the theme here
       },
+      animation: {
+        marquee: "marquee var(--duration, 40s) linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [
     require("tailwindcss-animate"), // Needed for framer-motion animations in shadcn/ui
   ],
 }
+
 export default config
