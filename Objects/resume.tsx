@@ -23,7 +23,7 @@ export function GlowingEffectDemo() {
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
         icon={<img src="/ieee.png" alt="Logo" className="h-3 w-9" />}
         title="IMSA 2025"
-        description="Published paper in the IEEE International Conference (Intelligent Methods and Smart Applications (IMSA) 2025) on eXplainable AI and Machine Learning."
+        description="Published a paper in the IEEE International Conference (Intelligent Methods and Smart Applications (IMSA) 2025) on eXplainable AI and Machine Learning."
       />
       <GridItem
         area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"

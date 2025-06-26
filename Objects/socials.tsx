@@ -45,7 +45,7 @@ function MagneticSocialLink({
 const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'LinkedIn',
-    link: 'www.linkedin.com/in/ahmed-mitwalli-652972243',
+    link: 'https://www.linkedin.com/in/ahmed-mitwalli-652972243/',
   },
     {
     label: 'Github',

@@ -12,7 +12,7 @@ const demoData: Gallery4Props = {
         "Published on IEEE Xplore, This project explores the use of explainable AI techniques to enhance the interpretability of night-time object detection systems, improving safety and reliability in low-visibility conditions.",
       href: "https://ui.shadcn.com",
       image:
-        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://cdn.pixabay.com/photo/2017/07/14/07/45/glass-2502963_1280.jpg",
     },
     {
       id: "Bachelor",
@@ -21,7 +21,7 @@ const demoData: Gallery4Props = {
         "This project focuses on developing a machine learning model to assist in the early detection of breast cancer, utilizing advanced imaging techniques and data analysis.",
       href: "https://tailwindcss.com",
       image:
-        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://cdn.pixabay.com/photo/2017/07/14/07/45/glass-2502963_1280.jpg",
     },
     {
       id: "Figma",
@@ -30,7 +30,7 @@ const demoData: Gallery4Props = {
         "Learn how Figma's collaborative design features can streamline the development of user-friendly interfaces for complex applications.",
       href: "https://figma.com",
       image:
-        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://cdn.pixabay.com/photo/2017/07/14/07/45/glass-2502963_1280.jpg",
     },
     {
       id: "MERN",
@@ -39,7 +39,7 @@ const demoData: Gallery4Props = {
         "Mock up of a coursera like website built using the MERN stack.",
       href: "https://react.dev",
       image:
-        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://cdn.pixabay.com/photo/2017/07/14/07/45/glass-2502963_1280.jpg",
     },
     {
       id: "Mips",
@@ -48,7 +48,7 @@ const demoData: Gallery4Props = {
         "Explore how MIPS assembly language can be utilized to create efficient scheduling algorithms.",
       href: "https://mips.org",
       image:
-        "https://plus.unsplash.com/premium_photo-1674728198545-8fa4796b9297?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://cdn.pixabay.com/photo/2017/07/14/07/45/glass-2502963_1280.jpg",
     },
   ],
 };

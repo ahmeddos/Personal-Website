@@ -13,6 +13,8 @@ import { Footer } from "@/components/ui/footer";
 import { useState, useEffect, useRef } from "react";
 import { Home, User, Briefcase, FileText } from 'lucide-react'
 import { NavBar } from "@/components/ui/tubelight-navbar"
+import GeometricBackground from "@/components/ui/geometric";
+
 
 
 
@@ -89,33 +91,47 @@ useEffect(() => {
   return (
     <main>
       <NavBar items={navItems} activeTab={activeTab} setActiveTab={setActiveTab} />
-      <DefaultToggle />
-
-      <section id="home" className="min-h-screen relative overflow-hidden">
+      
+      
+       <section id="home" className="min-h-screen relative overflow-hidden">
+  
         <div className="absolute inset-0 pointer-events-none z-0">
-          <SplashCursor />
+          
         </div>
+         <GeometricBackground className="flex w-full h-screen justify-center items-center ">
         <div className="relative z-100 pointer-events-auto">
           <Hero />
         </div>
+        </GeometricBackground>
       </section>
 
       <section id="about" className="min-h-screen">
-        <div className="w-full">
+         <GeometricBackground className="flex w-full h-screen justify-center items-center ">
+        <div className="w-full z-10">
           <Feature />
         </div>
+        </GeometricBackground>
       </section>
 
-      <section id="projects" className="min-h-screen">
+      <section
+            id="projects"
+            className="min-h-screen bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/BG.png')" }}
+          >
         <Gallery4Demo />
       </section>
 
       <ScrollVelocityDemo />
 
-      <section id="resume" className="min-h-screen">
+      <section
+          id="resume"
+          className="min-h-screen bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/BG.png')" }}
+        >
         <GlowingEffectDemo />
         <Footer />
       </section>
+      
     </main>
   )
 }
