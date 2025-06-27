@@ -1,17 +1,16 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Home, User, Briefcase, FileText } from "lucide-react"
-import { DemoVariant1 } from "@/Objects/hoverButton"
 
 interface NavItem {
   name: string
   url: string
-  icon: string // <- change from LucideIcon to string
+  icon: string // string key for the icon map
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -23,13 +22,13 @@ const iconMap: Record<string, LucideIcon> = {
 
 interface NavBarProps {
   items: NavItem[]
-  activeTab: string
-  setActiveTab: (tab: string) => void
   className?: string
 }
 
-export function NavBar({ items, className,activeTab,setActiveTab }: NavBarProps) {
-  
+export function NavBar({ items, className }: NavBarProps) {
+  const sectionIds = items.map((item) => item.url.replace("#", ""))
+  const activeTab = useScrollNav(sectionIds)
+
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -59,7 +58,6 @@ export function NavBar({ items, className,activeTab,setActiveTab }: NavBarProps)
             <Link
               key={item.name}
               href={item.url}
-              onClick={() => setActiveTab(item.name)}
               className={cn(
                 "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
                 "text-foreground/80 hover:text-primary",
@@ -94,4 +92,49 @@ export function NavBar({ items, className,activeTab,setActiveTab }: NavBarProps)
       </div>
     </div>
   )
+}
+
+// Hook stays the same
+export function useScrollNav(sectionIds: string[]) {
+  const [activeTab, setActiveTab] = useState("");
+  const lastTabRef = useRef<string>("");
+
+  useEffect(() => {
+    const sectionPositions = sectionIds.map((id) => {
+      const el = document.getElementById(id);
+      return el ? { id, offsetTop: el.offsetTop } : null;
+    }).filter(Boolean) as { id: string; offsetTop: number }[];
+
+    const handleScroll = () => {
+      requestAnimationFrame(() => {
+        const scrollPos = window.scrollY + window.innerHeight / 3;
+
+        for (let i = sectionPositions.length - 1; i >= 0; i--) {
+          if (scrollPos >= sectionPositions[i].offsetTop) {
+            const id = sectionPositions[i].id;
+
+            if (lastTabRef.current !== id) {
+              lastTabRef.current = id;
+              setActiveTab(id.charAt(0).toUpperCase() + id.slice(1));
+
+              if (window.location.hash !== `#${id}`) {
+                history.replaceState(null, "", `#${id}`);
+              }
+            }
+
+            break;
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // initial check
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [sectionIds]);
+
+  return activeTab;
 }

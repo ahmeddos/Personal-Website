@@ -30,7 +30,7 @@ function Hero() {
     <div className="w-full overflow-hidden">
       <div className="container mx-auto">
         <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
-          <div className="flex gap-4 flex-col pt-20">
+          <div className="flex gap-4 flex-col pt-10">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
               <span className="text-spektr-cyan-50">Ahmed Mitwalli</span>
               <span className="relative flex w-auto max-w-none justify-center overflow-hidden text-center whitespace-nowrap md:pb-4 md:pt-1">
