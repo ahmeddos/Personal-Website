@@ -35,7 +35,7 @@ export function GlowingEffectDemo() {
         area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
         icon={<img src="/aiesec.png" alt="Logo" className="h-5 w-3" />}
         title="AIESEC GUC Member 23'-24'"
-        description="Memeber of the Incoming Global Volunteer Program."
+        description="Member of the Incoming Global Volunteer Program."
       />
     </ul>
   );
